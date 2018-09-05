@@ -1,0 +1,50 @@
+ubuntu@ubuntu-VirtualBox:~$ cd ..
+ubuntu@ubuntu-VirtualBox:/home$ ls
+dev  ubuntu
+ubuntu@ubuntu-VirtualBox:/home$ deluser dev
+/usr/sbin/deluser: Only root may remove a user or group from the system.
+ubuntu@ubuntu-VirtualBox:/home$ sudo su
+[sudo] password for ubuntu: 
+root@ubuntu-VirtualBox:/home# deluser dev
+/usr/sbin/deluser: The user `dev' does not exist.
+root@ubuntu-VirtualBox:/home# cd /home
+root@ubuntu-VirtualBox:/home# adduser dev
+Adding user `dev' ...
+Adding new group `dev' (1001) ...
+Adding new user `dev' (1001) with group `dev' ...
+The home directory `/home/dev' already exists.  Not copying from `/etc/skel'.
+Enter new UNIX password: 
+Retype new UNIX password: 
+passwd: password updated successfully
+Changing the user information for dev
+Enter the new value, or press ENTER for the default
+	Full Name []: Nishkarsh
+	Room Number []: D-203
+	Work Phone []: 9005445752
+	Home Phone []: 
+	Other []: 
+Is the information correct? [Y/n] Y
+root@ubuntu-VirtualBox:/home# sudo usermod -aG sudo dev
+root@ubuntu-VirtualBox:/home# chmod 777 dev
+root@ubuntu-VirtualBox:/home# cd dev
+root@ubuntu-VirtualBox:/home/dev# mkdir nishkarsh
+mkdir: cannot create directory ‘nishkarsh’: File exists
+root@ubuntu-VirtualBox:/home/dev# mkdir nish
+root@ubuntu-VirtualBox:/home/dev# cd nish
+root@ubuntu-VirtualBox:/home/dev/nish# touch nish.txt
+root@ubuntu-VirtualBox:/home/dev/nish# echo "My name is Nishkarsh Raj Khare" >> nish.txt 
+root@ubuntu-VirtualBox:/home/dev/nish# cat nish.txt
+My name is Nishkarsh Raj Khare
+root@ubuntu-VirtualBox:/home/dev/nish# addgroup ops
+Adding group `ops' (GID 1002) ...
+Done.
+root@ubuntu-VirtualBox:/home/dev/nish# sudo usermod -a -G ops dev
+root@ubuntu-VirtualBox:/home/dev/nish# grep ops /etc/groups
+grep: /etc/groups: No such file or directory
+root@ubuntu-VirtualBox:/home/dev/nish# grep ops /etc/group
+whoopsie:x:117:
+ops:x:1002:dev
+root@ubuntu-VirtualBox:/home/dev/nish# exit
+exit
+ubuntu@ubuntu-VirtualBox:/home$ 
+

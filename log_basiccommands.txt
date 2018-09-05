@@ -1,0 +1,143 @@
+ubuntu@ubuntu-VirtualBox:~/Desktop/DevOps_Automation_Lab$ hostname
+ubuntu-VirtualBox
+ubuntu@ubuntu-VirtualBox:~/Desktop/DevOps_Automation_Lab$ hostname -I
+10.0.2.15 
+ubuntu@ubuntu-VirtualBox:~/Desktop/DevOps_Automation_Lab$ clear
+ubuntu@ubuntu-VirtualBox:~/Desktop/DevOps_Automation_Lab$ cat log_adduser.txt | head -10 | tail -10
+ubuntu@ubuntu-VirtualBox:~$ cd ..
+ubuntu@ubuntu-VirtualBox:/home$ ls
+dev  ubuntu
+ubuntu@ubuntu-VirtualBox:/home$ deluser dev
+/usr/sbin/deluser: Only root may remove a user or group from the system.
+ubuntu@ubuntu-VirtualBox:/home$ sudo su
+[sudo] password for ubuntu: 
+root@ubuntu-VirtualBox:/home# deluser dev
+/usr/sbin/deluser: The user `dev' does not exist.
+root@ubuntu-VirtualBox:/home# cd /home
+ubuntu@ubuntu-VirtualBox:~/Desktop/DevOps_Automation_Lab$ ls -t
+log.tar.gz  log.tar  log_adduser.txt  variable.sh  output.sh  input.sh
+ubuntu@ubuntu-VirtualBox:~/Desktop/DevOps_Automation_Lab$ ls -l -S
+total 32
+-rw-r--r-- 1 ubuntu ubuntu 10240 Sep  2 11:23 log.tar
+-rw-r--r-- 1 ubuntu ubuntu  1942 Sep  2 11:19 log_adduser.txt
+-rw-r--r-- 1 ubuntu ubuntu   822 Sep  2 11:37 log.tar.gz
+-rwxr-xr-x 1 ubuntu ubuntu   152 Aug 21 07:28 output.sh
+-rwxr-xr-x 1 ubuntu ubuntu   125 Aug 21 07:25 input.sh
+-rwxr-xr-x 1 ubuntu ubuntu    70 Aug 21 07:58 variable.sh
+ubuntu@ubuntu-VirtualBox:~/Desktop/DevOps_Automation_Lab$ hostname
+ubuntu-VirtualBox
+ubuntu@ubuntu-VirtualBox:~/Desktop/DevOps_Automation_Lab$ hostname -I
+10.0.2.15 
+ubuntu@ubuntu-VirtualBox:~/Desktop/DevOps_Automation_Lab$ pwd
+/home/ubuntu/Desktop/DevOps_Automation_Lab
+ubuntu@ubuntu-VirtualBox:~/Desktop/DevOps_Automation_Lab$ sudo bash
+[sudo] password for ubuntu: 
+root@ubuntu-VirtualBox:~/Desktop/DevOps_Automation_Lab# exit
+exit
+ubuntu@ubuntu-VirtualBox:~/Desktop/DevOps_Automation_Lab$ df
+Filesystem     1K-blocks    Used Available Use% Mounted on
+udev              991184       0    991184   0% /dev
+tmpfs             204132    1540    202592   1% /run
+/dev/sda1       20509264 8052352  11392056  42% /
+tmpfs            1020656       0   1020656   0% /dev/shm
+tmpfs               5120       4      5116   1% /run/lock
+tmpfs            1020656       0   1020656   0% /sys/fs/cgroup
+/dev/loop1          1664    1664         0 100% /snap/gnome-calculator/154
+/dev/loop2          3456    3456         0 100% /snap/gnome-system-monitor/36
+/dev/loop3         21504   21504         0 100% /snap/gnome-logs/25
+/dev/loop4         14848   14848         0 100% /snap/gnome-logs/37
+/dev/loop6          3840    3840         0 100% /snap/gnome-system-monitor/51
+/dev/loop5         13312   13312         0 100% /snap/gnome-characters/103
+/dev/loop7          3840    3840         0 100% /snap/gnome-system-monitor/54
+/dev/loop8         89088   89088         0 100% /snap/core/4917
+/dev/loop9         35584   35584         0 100% /snap/gtk-common-themes/319
+/dev/loop11        13312   13312         0 100% /snap/gnome-characters/117
+/dev/loop10        12544   12544         0 100% /snap/gnome-characters/69
+/dev/loop13       143488  143488         0 100% /snap/gnome-3-26-1604/59
+/dev/loop12        14848   14848         0 100% /snap/gnome-logs/40
+/dev/loop14       144384  144384         0 100% /snap/gnome-3-26-1604/70
+/dev/loop16         2432    2432         0 100% /snap/gnome-calculator/199
+/dev/loop15        89088   89088         0 100% /snap/core/5145
+tmpfs             204128      28    204100   1% /run/user/120
+/dev/loop17        90112   90112         0 100% /snap/core/5328
+tmpfs             204128      28    204100   1% /run/user/1000
+ubuntu@ubuntu-VirtualBox:~/Desktop/DevOps_Automation_Lab$ du Desktop
+du: cannot access 'Desktop': No such file or directory
+ubuntu@ubuntu-VirtualBox:~/Desktop/DevOps_Automation_Lab$ ]cd ..
+cd
+Command ']cd' not found, did you mean:
+
+  command 'hcd' from deb hfsutils
+  command 'mcd' from deb mtools
+  command 'bcd' from deb bsdgames
+
+Try: sudo apt install <deb name>
+
+ubuntu@ubuntu-VirtualBox:~/Desktop/DevOps_Automation_Lab$ cdcd
+
+Command 'cdcd' not found, but can be installed with:
+
+sudo apt install cdcd
+
+ubuntu@ubuntu-VirtualBox:~/Desktop/DevOps_Automation_Lab$ cd
+ubuntu@ubuntu-VirtualBox:~$ du Desktop/
+36	Desktop/DevOps_Automation_Lab
+40	Desktop/
+ubuntu@ubuntu-VirtualBox:~$ df -m
+Filesystem     1M-blocks  Used Available Use% Mounted on
+udev                 968     0       968   0% /dev
+tmpfs                200     2       198   1% /run
+/dev/sda1          20029  7864     11126  42% /
+tmpfs                997     0       997   0% /dev/shm
+tmpfs                  5     1         5   1% /run/lock
+tmpfs                997     0       997   0% /sys/fs/cgroup
+/dev/loop1             2     2         0 100% /snap/gnome-calculator/154
+/dev/loop2             4     4         0 100% /snap/gnome-system-monitor/36
+/dev/loop3            21    21         0 100% /snap/gnome-logs/25
+/dev/loop4            15    15         0 100% /snap/gnome-logs/37
+/dev/loop6             4     4         0 100% /snap/gnome-system-monitor/51
+/dev/loop5            13    13         0 100% /snap/gnome-characters/103
+/dev/loop7             4     4         0 100% /snap/gnome-system-monitor/54
+/dev/loop8            87    87         0 100% /snap/core/4917
+/dev/loop9            35    35         0 100% /snap/gtk-common-themes/319
+/dev/loop11           13    13         0 100% /snap/gnome-characters/117
+/dev/loop10           13    13         0 100% /snap/gnome-characters/69
+/dev/loop13          141   141         0 100% /snap/gnome-3-26-1604/59
+/dev/loop12           15    15         0 100% /snap/gnome-logs/40
+/dev/loop14          141   141         0 100% /snap/gnome-3-26-1604/70
+/dev/loop16            3     3         0 100% /snap/gnome-calculator/199
+/dev/loop15           87    87         0 100% /snap/core/5145
+tmpfs                200     1       200   1% /run/user/120
+/dev/loop17           88    88         0 100% /snap/core/5328
+tmpfs                200     1       200   1% /run/user/1000
+ubuntu@ubuntu-VirtualBox:~$ ls -lah
+total 83M
+drwxr-xr-x 16 ubuntu ubuntu 4.0K Sep  2 11:05 .
+drwxr-xr-x  4 root   root   4.0K Aug 16 19:45 ..
+-rw-r--r--  1 root   root    83M Jul 14 02:53 atom-amd64.deb
+-rw-------  1 ubuntu ubuntu 1.2K Sep  2 11:48 .bash_history
+-rw-r--r--  1 ubuntu ubuntu  220 Jul 19 10:58 .bash_logout
+-rw-r--r--  1 ubuntu ubuntu 3.7K Jul 19 10:58 .bashrc
+drwx------ 14 ubuntu ubuntu 4.0K Aug 21 07:42 .cache
+drwx------ 13 ubuntu ubuntu 4.0K Aug 21 07:25 .config
+drwxr-xr-x  3 ubuntu ubuntu 4.0K Sep  2 11:24 Desktop
+drwxr-xr-x  2 ubuntu ubuntu 4.0K Jul 19 11:08 Documents
+drwxr-xr-x  2 ubuntu ubuntu 4.0K Jul 19 11:08 Downloads
+-rw-r--r--  1 ubuntu ubuntu 8.8K Jul 19 10:58 examples.desktop
+drwx------  2 ubuntu ubuntu 4.0K Jul 19 11:45 .gconf
+drwx------  3 ubuntu ubuntu 4.0K Jul 19 11:08 .gnupg
+-rw-------  1 ubuntu ubuntu 2.9K Sep  2 11:05 .ICEauthority
+drwx------  3 ubuntu ubuntu 4.0K Jul 19 11:08 .local
+drwx------  5 ubuntu ubuntu 4.0K Aug  6 11:30 .mozilla
+drwxr-xr-x  2 ubuntu ubuntu 4.0K Jul 19 11:08 Music
+drwxr-xr-x  2 ubuntu ubuntu 4.0K Sep  2 11:47 Pictures
+-rw-r--r--  1 ubuntu ubuntu  807 Jul 19 10:58 .profile
+drwxr-xr-x  2 ubuntu ubuntu 4.0K Jul 19 11:08 Public
+-rw-r--r--  1 ubuntu ubuntu    0 Jul 19 11:09 .sudo_as_admin_successful
+drwxr-xr-x  2 ubuntu ubuntu 4.0K Jul 19 11:08 Templates
+drwxr-xr-x  2 ubuntu ubuntu 4.0K Jul 19 11:08 Videos
+-rw-------  1 ubuntu ubuntu 1.1K Sep  2 10:56 .viminfo
+ubuntu@ubuntu-VirtualBox:~$ ^C
+ubuntu@ubuntu-VirtualBox:~$ cd Desktop/DevOps_Automation_Lab/
+ubuntu@ubuntu-VirtualBox:~/Desktop/DevOps_Automation_Lab$ gedit log_basiccommands.txt
+
