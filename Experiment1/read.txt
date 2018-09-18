@@ -1,0 +1,21 @@
+1) Input using read
+2) Error and Output stream
+3) readonly using date and tilde
+4) case using marks
+5) if compare
+6) if compare with user input
+7) nested if
+8) nested if with user input
+9) nested if -lt
+10) nested if -lt with user input
+11) case basic
+12) for loop
+13) for loop using user
+14) function
+15) calling
+16) call by reference
+17) else if
+18) while
+19) do loop
+20) array
+
