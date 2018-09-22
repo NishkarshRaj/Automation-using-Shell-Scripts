@@ -1,8 +1,8 @@
 #!/bin/bash
 function greet
 {
-echo "Hello $1"
+echo "Hello $1" #$1 is the first argument $0 is filename and so all.
 }
 
-greet "World"
+greet "Hello Nishkarsh" "Yo"
 greet "User"

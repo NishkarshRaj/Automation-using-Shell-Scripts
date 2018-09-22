@@ -8,3 +8,6 @@ for number in `seq 1 10`
 do 
 echo "I am $number"
 done
+
+
+# seq is sequence for a to b

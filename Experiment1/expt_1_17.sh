@@ -10,3 +10,5 @@ echo "$number1 is less than $number2"
 else
 echo "$number1 is equal to $number2"
 fi 
+
+#elif not else if elsif elseif
