@@ -11,7 +11,7 @@ fi
 for user in $(getent passwd | cut -d : -f 6 | grep '/home' | sed 's:$:/.bashrc:'); do
     cat $user | grep -q 'validate_commands'
     if [[ $? != 0 ]]; then
-        echo '
+        
 function validate_commands {
     cat /opt/forbidden_commands.txt | while read command; do
         if [ "$BASH_COMMAND" == "$command" ]; then
@@ -20,7 +20,7 @@ function validate_commands {
         fi
     done
 }
-trap validate_commands DEBUG' >> $user
+trap validate_commands DEBUG >> $user
     fi
 done
 
