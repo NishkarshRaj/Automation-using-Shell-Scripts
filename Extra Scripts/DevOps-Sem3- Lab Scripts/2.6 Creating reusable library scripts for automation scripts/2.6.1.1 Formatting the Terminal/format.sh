@@ -42,3 +42,4 @@ camelcase() {
 uppercase() { echo $1 | awk '{print toupper($0)}' }
 
 lowercase() { echo $1 | awk '{print tolower($0)}' }
+
