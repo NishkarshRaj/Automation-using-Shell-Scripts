@@ -1,63 +1,12 @@
 # Automation-using-Shell-Scripts
 Development Automation using Shell Scripting, Crontab Scheduling, LAMP STACK etc.
 
-# How to Collaborate:
+## How to Contribute
 
-1. Fork the repository to your own GitHub account.
+All contributions welcomed. Follow these [guidelines](CONTRIBUTING.md) to contribute.
 
-2. Clone the repository to your local machine
-```
-$ git clone "https://www.github.com/{Username}/Automation-using-Shell-Scripts"
-```
-where username is your GitHub account username.
+## License
 
-3. Create a branch where you can do your local work.
-Never work on **master** branch as we do not allow master commits except by admins.
-```
-$ git branch {branchname}
-$ git checkout branchname
-```
+This project follows MIT [License](LICENSE)
 
-4. Do your work and stage your changes.
-```
-$ git add <filename>
-```
-
-5. Commit you changes with a commit message containing your name, file(s) worked upon, changes added.
-```
-$ git commit -m "Name| files| Changes"
-```
-
-6. Push changes to your forked repository
-```
-$ git push -u origin branchname
-```
-7. Create a pull request to the upstream repository.
-
-# Synchronize forked repository with Upstream repository
-
-1. Create upstream as our repository
-```
-$ git remote add upstream "https://www.github.com/NishkarshRaj/Automation-using-Shell-Scripts"
-```
-
-2. Fetch upstream changes in local machine
-```
-$ git fetch upstream
-```
-
-3. Switch to master branch
-```
-$ git checkout master
-```
-
-4. Merge changes in local machine
-```
-$ git merge upstream/master
-```
-
-5. Push changes to your forked GitHub repository
-```
-$ git push -f origin master
-```
 
